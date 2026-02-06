@@ -57,7 +57,7 @@ App = {
             console.error("No accounts found");
             return;
         }
-        App.account = App.accounts[0];
+        App.account = App.accounts[1];  // 0xDDcbDcf62397c76367fFA6A639338Eeec68eAf0D
         console.log("Active account is",App.account);
     },
 
@@ -88,12 +88,14 @@ App = {
     },
 
     renderTasks: async () => {
+        console.log("Rendering tasks...");
         const tasks = await App.todoList.taskCount(); 
         const $taskTemplate = $('.taskTemplate');
 
         for(let i=1;i<=tasks;i++)
         {
             const task = await App.todoList.tasks(i);
+            console.log("Task:",task);
             const taskId = task[0].toNumber();
             const taskContent = task[1];
             const taskCompleted = task[2];
