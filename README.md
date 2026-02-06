@@ -48,7 +48,7 @@ Every "Write" operation on the blockchain requires computational power. Users pa
 
 1. **Clone the Repo**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/SwastikIIIT/Todo-dApp.git
    cd blockchain-todo-list
    ```
 
@@ -89,5 +89,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 👨‍💻 Author
 
-Your Name - [SwasTik Sharma](https://www.linkedin.com/in/swastik-sharma-943615290)
+Your Name - [Swastik Sharma](https://www.linkedin.com/in/swastik-sharma-943615290)
 
